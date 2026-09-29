@@ -1,0 +1,30 @@
+/* цвета, размеры, шрифты, отступы */
+:root {
+  --font-main:
+    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --fs-h1: 1rem; /* 16px заголовки колонок */
+  --fs-h2: 0.875rem; /* 14px  заголовки карточек */
+  --fs-body: 0.75rem; /* 12px  метаданные и текст */
+  --fs-small: 0.6875rem; /* 11px  мелкий текст */
+
+  --color-bg: #f4f5f7;
+  --color-surface: #ffffff;
+  --color-primary: #4c6ef5;
+  --color-primary-hover: #3b5bdb;
+  --color-text: #1a1a1a;
+  --color-text-muted: #6b7280;
+  --color-border: #e5e7eb;
+  --color-error: #e03131;
+  --color-success: #2f9e44;
+
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+}

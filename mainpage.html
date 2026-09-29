@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Канбан</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/board.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body>
+    <div class="board">
+      <header class="board__header">
+        <h1>Канбан</h1>
+
+        <input
+          class="board__burger-toggle"
+          type="checkbox"
+          id="board-nav-toggle"
+          hidden
+        />
+
+        <label
+          class="board__burger"
+          for="board-nav-toggle"
+          aria-label="Открыть меню"
+        >
+          <span class="board__burger-line"></span>
+          <span class="board__burger-line"></span>
+          <span class="board__burger-line"></span>
+        </label>
+
+        <nav class="board__nav" id="board-nav">
+          <a href="#">Работа</a>
+          <a href="#">Дом</a>
+          <a href="#">Другое</a>
+          <a href="authorization.html">Выйти</a>
+        </nav>
+      </header>
+
+      <main class="board__columns">
+        <section class="column">
+          <div class="column__header">
+            <h1 class="column__title">Выдано</h1>
+            <button
+              class="column__add-btn"
+              type="button"
+              aria-label="Добавить задачу"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  d="M8 3V13M3 8H13"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <article class="task-card">
+            <details class="task-card__details">
+              <summary class="task-card__summary">
+                <span class="task-card__arrow" aria-hidden="true"></span>
+                <h2 class="task-card__title">Сверстать экран входа</h2>
+
+                <div class="task-card__menu">
+                  <input
+                    class="task-card__menu-toggle"
+                    type="checkbox"
+                    id="menu-task-1"
+                    hidden
+                  />
+                  <label
+                    class="task-card__menu-btn"
+                    for="menu-task-1"
+                    aria-label="Действия с задачей"
+                  >
+                    <span class="task-card__menu-dots" aria-hidden="true"
+                      >⋯</span
+                    >
+                  </label>
+                  <ul class="task-card__menu-list">
+                    <li>
+                      <button class="task-card__menu-item" type="button">
+                        Редактировать
+                      </button>
+                    </li>
+                    <li>
+                      <button class="task-card__menu-item" type="button">
+                        Переместить
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="task-card__menu-item task-card__menu-item--danger"
+                        type="button"
+                      >
+                        Удалить
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </summary>
+              <p class="task-card__meta">
+                Дедлайн: 20 мая · Исполнитель: Иван · Нужно сверстать экран
+                входа по макету, подключить стили, проверить адаптивность и
+                состояния полей.
+              </p>
+            </details>
+          </article>
+        </section>
+
+        <section class="column">
+          <h1 class="column__title">В разработке</h1>
+
+          <article class="task-card">
+            <details class="task-card__details">
+              <summary class="task-card__summary">
+                <span class="task-card__arrow" aria-hidden="true"></span>
+                <h2 class="task-card__title">Настроить normalize.css</h2>
+
+                <div class="task-card__menu">
+                  <input
+                    class="task-card__menu-toggle"
+                    type="checkbox"
+                    id="menu-task-2"
+                    hidden
+                  />
+                  <label
+                    class="task-card__menu-btn"
+                    for="menu-task-2"
+                    aria-label="Действия с задачей"
+                  >
+                    <span class="task-card__menu-dots" aria-hidden="true"
+                      >⋯</span
+                    >
+                  </label>
+                  <ul class="task-card__menu-list">
+                    <li>
+                      <button class="task-card__menu-item" type="button">
+                        Редактировать
+                      </button>
+                    </li>
+                    <li>
+                      <button class="task-card__menu-item" type="button">
+                        Переместить
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="task-card__menu-item task-card__menu-item--danger"
+                        type="button"
+                      >
+                        Удалить
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </summary>
+              <p class="task-card__meta">
+                В работе с 10 мая · Исполнитель: Пётр · Проверить сброс стилей,
+                убрать лишние отступы и убедиться, что базовые элементы выглядят
+                одинаково в разных браузерах.
+              </p>
+            </details>
+          </article>
+        </section>
+
+        <section class="column">
+          <h1 class="column__title">Выполнено</h1>
+
+          <article class="task-card">
+            <details class="task-card__details">
+              <summary class="task-card__summary">
+                <span class="task-card__arrow" aria-hidden="true"></span>
+                <h2 class="task-card__title">Настроить normalize.css</h2>
+
+                <div class="task-card__menu">
+                  <input
+                    class="task-card__menu-toggle"
+                    type="checkbox"
+                    id="menu-task-3"
+                    hidden
+                  />
+                  <label
+                    class="task-card__menu-btn"
+                    for="menu-task-3"
+                    aria-label="Действия с задачей"
+                  >
+                    <span class="task-card__menu-dots" aria-hidden="true"
+                      >⋯</span
+                    >
+                  </label>
+                  <ul class="task-card__menu-list">
+                    <li>
+                      <button class="task-card__menu-item" type="button">
+                        Редактировать
+                      </button>
+                    </li>
+                    <li>
+                      <button class="task-card__menu-item" type="button">
+                        Переместить
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="task-card__menu-item task-card__menu-item--danger"
+                        type="button"
+                      >
+                        Удалить
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </summary>
+              <p class="task-card__meta">
+                Завершено 12 мая · Исполнитель: Пётр · Сброс стилей подключён,
+                проверен на основных браузерах, замечаний нет.
+              </p>
+            </details>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

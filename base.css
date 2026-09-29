@@ -1,0 +1,45 @@
+/* body, типографика, ссылки, img */
+body {
+  font-family: var(--font-main);
+  font-size: var(--fs-body);
+  font-weight: 400;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+h1 {
+  font-size: var(--fs-h1);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+p,
+span,
+label,
+small {
+  font-size: var(--fs-body);
+  font-weight: 400;
+  color: var(--color-text-muted);
+}
+
+a {
+  color: var(--color-primary);
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--color-primary-hover);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

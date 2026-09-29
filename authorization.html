@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Вход</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/auth.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body>
+    <main class="auth">
+      <header class="auth__header">
+        <h1 class="auth__title">Вход</h1>
+        <p class="auth__subtitle">Войдите в аккаунт</p>
+      </header>
+
+      <form class="auth__form" action="#" method="post" novalidate>
+        <div class="field">
+          <label class="field__label" for="login-email">Email</label>
+          <input
+            class="field__input"
+            type="email"
+            id="login-email"
+            name="email"
+            placeholder="you@example.com"
+            autocomplete="email"
+            required
+          />
+        </div>
+
+        <div class="field">
+          <label class="field__label" for="login-password">Пароль</label>
+          <input
+            class="field__input"
+            type="password"
+            id="login-password"
+            name="password"
+            placeholder="••••••••"
+            autocomplete="current-password"
+            required
+          />
+        </div>
+
+        <button class="btn btn--primary" type="submit">Войти</button>
+      </form>
+
+      <footer class="auth__footer">
+        Нет аккаунта?
+        <a class="auth__link" href="registration.html">Зарегистрироваться</a>
+      </footer>
+    </main>
+  </body>
+</html>

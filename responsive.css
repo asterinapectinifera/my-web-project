@@ -1,0 +1,29 @@
+/* Все @media */
+
+@media (min-width: 768px) {
+  .auth__form {
+    max-width: 440px;
+  }
+
+  .board__columns {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .column {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .auth {
+    padding: var(--space-xl);
+  }
+
+  .board__columns {
+    gap: var(--space-lg);
+    padding: var(--space-lg);
+  }
+}
